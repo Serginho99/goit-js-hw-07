@@ -26,7 +26,6 @@ function onEventWrapperClick(event) {
 
   function onEscPress(event) {
     if (event.code === "Escape") {
-      console.log(event.code);
       instance.close();
       window.removeEventListener("keydown", onEscPress);
     }
