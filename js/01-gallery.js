@@ -12,6 +12,9 @@ function onEventWrapperClick(event) {
   if (!event.target.classList.contains("gallery__image")) {
     return;
   }
+  // if (event.target.nodeName !== "IMG") {
+  //   return;
+  // }
   event.preventDefault();
   console.log(event.target);
 
