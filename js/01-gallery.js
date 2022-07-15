@@ -38,7 +38,7 @@ function onEventWrapperClick(event) {
 }
 
 function imgCreate(galleryItems) {
-  const markup = galleryItems
+  return galleryItems
     .map(({ original, preview, description }) => {
       return `<div class="gallery__item">
   <a class="gallery__link" href="${original}">
@@ -52,5 +52,4 @@ function imgCreate(galleryItems) {
 </div>`;
     })
     .join(" ");
-  return markup;
 }
