@@ -7,18 +7,6 @@ const listEl = document.querySelector(".gallery");
 
 const fn = imgCreate(galleryItems);
 listEl.insertAdjacentHTML("afterbegin", fn);
-listEl.addEventListener("click", onEventWrapperClick);
-
-function onEventWrapperClick(event) {
-  if (!event.target.classList.contains("gallery__image")) {
-    return;
-  }
-  // if (event.target.nodeName !== "IMG") {
-  //   return;
-  // }
-  event.preventDefault();
-  console.log(event.target);
-}
 
 let lightbox = new SimpleLightbox(".gallery a", {
   /* options */
